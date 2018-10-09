@@ -119,12 +119,12 @@ legend {
   width: 100%;
   display: block;
 }
+.contact label {
+  min-width: 141px;
+}
 
 .newsletter input, label {
  display: inline-block;
-}
-label [for="news-format"] {
-  margin-top: 10px;
 }
 
 input::placeholder {
@@ -139,13 +139,6 @@ label {
 }
 select {
   width: 100%;
-}
-textarea {
-  max-width: 100%;
-}
-
-input [id="zipcode"] {
-  width: 50%;
 }
 
 #state {
@@ -173,6 +166,7 @@ input [id="zipcode"] {
 @media (min-width: 768px) {
   main {
     width: 60%;
+    min-width: 500px;
   }
   label {
     margin-bottom: 15px;
@@ -185,13 +179,13 @@ input [id="zipcode"] {
   .contact label {
     float: left;
     height: 37px;
-    width: 25%;
+    width: 30%;
     padding-top: 12px;
   }
   .contact input,
   .contact select {
     float: right;
-    width: 75%;
+    width: 70%;
   }
 
   .newsletter label,
